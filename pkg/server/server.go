@@ -107,6 +107,8 @@ type Options struct {
 	NoVersionHeader bool
 	// HeaderServer use custom string in HTTP response Server header instead of domain
 	HeaderServer string
+	// DefaultHTTPResponseFile is a file to serve for all HTTP requests (takes priority over other options)
+	DefaultHTTPResponseFile string
 
 	ACMEStore *acme.Provider
 	Stats     *Metrics

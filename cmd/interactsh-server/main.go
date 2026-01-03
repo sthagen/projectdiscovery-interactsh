@@ -67,6 +67,7 @@ func main() {
 		flagSet.StringVarP(&cliOptions.CustomRecords, "custom-records", "cr", "", "custom dns records YAML file for DNS server"),
 		flagSet.StringVarP(&cliOptions.HTTPIndex, "http-index", "hi", "", "custom index file for http server"),
 		flagSet.StringVarP(&cliOptions.HTTPDirectory, "http-directory", "hd", "", "directory with files to serve with http server"),
+		flagSet.StringVarP(&cliOptions.DefaultHTTPResponseFile, "default-http-response", "dhr", "", "file to serve for all http requests (takes priority over other options)"),
 		flagSet.BoolVarP(&cliOptions.DiskStorage, "disk", "ds", false, "disk based storage"),
 		flagSet.StringVarP(&cliOptions.DiskStoragePath, "disk-path", "dsp", "", "disk storage path"),
 		flagSet.StringVarP(&cliOptions.HeaderServer, "server-header", "csh", "", "custom value of Server header in response"),
