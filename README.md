@@ -362,6 +362,7 @@ CONFIG:
    -dr, -dynamic-resp           enable setting up arbitrary response data
    -cr, -custom-records string  custom dns records YAML file for DNS server
    -hi, -http-index string      custom index file for http server
+   -dhr, -default-http-response string  file to serve for all http requests (takes priority over other options)
    -hd, -http-directory string  directory with files to serve with http server
    -ds, -disk                   disk based storage
    -dsp, -disk-path string      disk storage path
