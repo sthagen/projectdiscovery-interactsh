@@ -292,6 +292,9 @@ func (s *StorageDB) getInteractions(correlationData *CorrelationData, id string)
 		}
 		var dataString []string
 		for _, d := range bytes.Split(data, []byte("\n")) {
+			if len(d) == 0 {
+				continue
+			}
 			dataString = append(dataString, string(d))
 		}
 		_ = s.db.Delete([]byte(id), nil)
